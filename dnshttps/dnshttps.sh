@@ -1,5 +1,5 @@
 brew install cloudflare/cloudflare/cloudflared
-mkdir /usr/local/etc/cloudflared
-cp config.yaml
+sudo mkdir /usr/local/etc/cloudflared
+sudo cp config.yaml /usr/local/etc/cloudflared/
 sudo cloudflared service install
 dig @127.0.0.1 google.com AA
